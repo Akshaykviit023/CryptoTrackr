@@ -60,7 +60,7 @@ const MainLayout = () => {
       {/*<p className="">Cryptocurrencies {">>"} Bitcoin</p>*/}
     <div className=" w-full flex flex-col justify-between items-start gap-6 lg:flex-row ">
         <div className=" w-full lg:w-3/4  ">
-            <TradingViewWidget />
+            <TradingViewWidget performanceMetrics = {requests.fetchPrice} currentCoin = {currentCoin}/>
 
             <PerformanceCard performanceMetrics = {requests.fetchPrice} currentCoin = {currentCoin}/>
 
