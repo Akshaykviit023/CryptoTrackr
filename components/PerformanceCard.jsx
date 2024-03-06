@@ -3,17 +3,16 @@ import { IoIosInformationCircle } from "react-icons/io";
 import { Separator } from "@/components/ui/separator";
 import { useState, useEffect } from "react";
 
-const PerformanceCard = ({ performanceMetrics }) => {
+const PerformanceCard = ({ performanceMetrics, currentCoin }) => {
     const [performanceData, setPerformanceData] = useState(null);
-
     useEffect(() => {
-        fetch(performanceMetrics)
+        fetch(`${performanceMetrics}/${currentCoin}`)
             .then((res) => res.json())
             .then((data) => {
                 setPerformanceData(data);
             })
             .catch(error => console.error(error));
-    }, [performanceMetrics]);
+    }, [currentCoin]);
 
     const getDateDifference = (dateString) => {
         const currentDate = new Date();
@@ -58,7 +57,7 @@ const PerformanceCard = ({ performanceMetrics }) => {
             {performanceData && (
                 <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] gap-x-16 mt-6">
                     <div>
-                    <p className="text-sm text-muted-foreground font-medium px-2 flex justify-between">Bitcoin Price <span className="text-black">{formatNumber(performanceData.market_data.current_price.usd, 'USD')}</span></p>
+                    <p className="text-sm text-muted-foreground font-medium px-2 flex justify-between">{performanceData.name} Price <span className="text-black">{formatNumber(performanceData.market_data.current_price.usd, 'USD')}</span></p>
                     <Separator className="my-4"/>
 
                     <p className="text-sm text-muted-foreground font-medium px-2 flex justify-between"> 24h Low / 24h High <span className="text-black">{formatNumber(performanceData.market_data.low_24h.usd, 'USD')} / {formatNumber(performanceData.market_data.high_24h.usd, 'USD')}</span></p>
