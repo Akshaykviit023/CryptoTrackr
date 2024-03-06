@@ -38,7 +38,7 @@ const SentimentCard = () => {
       <CarouselContent className="-ml-1">
           {SAMPLE_DATA.map((item, index) =>(
             <div key={index}>
-                <CarouselItem  className="pl-1 md:basis-1/2 xl:basis-1/4">
+                <CarouselItem  className="pl-4 md:basis-1/2 xl:basis-1/4">
             <div className="">
               <Card className={` ${item.bgColor} w-[320px] h-[140px] flex justify-center items-center md:w-[450px] md:h-[200px]`}>
                 <CardContent className=" ">
