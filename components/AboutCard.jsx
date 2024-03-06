@@ -35,7 +35,7 @@ const AboutCard = ({ performanceMetrics }) => {
                 console.log(data);
             })
             .catch(error => console.error(error));
-    }, []);
+    }, [performanceMetrics]);
 
   return (
     <div className="mt-6 bg-background rounded-xl p-2 md:p-6">
