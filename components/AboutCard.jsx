@@ -1,25 +1,11 @@
 "use client"
 
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { FaArrowTrendDown } from "react-icons/fa6";
-import { FaMoneyBillWave } from "react-icons/fa6";
-import { FaCoins } from "react-icons/fa6";
-import { FaChartPie } from "react-icons/fa6";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "./ui/button";
 
 const AboutCard = ({ performanceMetrics }) => {
-
-
-  const SAMPLE_DATA = [
-    { id: "01", bgColor: "bg-blue-50", logo: <FaMoneyBillWave />, logoColor: "bg-blue-600"},
-  { id: "02", bgColor: "bg-green-50", logo: <FaArrowTrendUp />, logoColor: "bg-green-600"},
-  { id: "03", bgColor: "bg-red-50", logo: <FaArrowTrendDown />, logoColor: "bg-red-600"},
-  { id: "04", bgColor: "bg-violet-50", logo: <FaChartPie />, logoColor: "bg-violet-600"},
-  { id: "05", bgColor: "bg-yellow-50", logo: <FaCoins />, logoColor: "bg-yellow-600"},
-  ]
 
   const [performanceData, setPerformanceData] = useState(null);
 
@@ -32,7 +18,6 @@ const AboutCard = ({ performanceMetrics }) => {
             .then((res) => res.json())
             .then((data) => {
                 setPerformanceData(data);
-                console.log(data);
             })
             .catch(error => console.error(error));
     }, [performanceMetrics]);
