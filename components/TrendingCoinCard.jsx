@@ -22,7 +22,7 @@ const TrendingCoinCard = ({ trendingRequest }) => {
         console.log(data.coins);
     })
     .catch(error => console.error(error));
-    }, [])
+    }, [trendingRequest])
     
 
   return (

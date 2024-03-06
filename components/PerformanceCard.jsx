@@ -11,10 +11,9 @@ const PerformanceCard = ({ performanceMetrics }) => {
             .then((res) => res.json())
             .then((data) => {
                 setPerformanceData(data);
-                console.log(data);
             })
             .catch(error => console.error(error));
-    }, []);
+    }, [performanceMetrics]);
 
     const getDateDifference = (dateString) => {
         const currentDate = new Date();

@@ -23,10 +23,9 @@ const FooterCharts = ({ trendingCoinsProps }) => {
     })
     .then((data) => {
         setTrendingCoins(data.coins);
-        console.log(data);
     })
     .catch(error => console.error(error));
-    }, [])
+    }, [trendingCoinsProps])
 
   return (
     <div className="p-12 bg-white max-md:p-6">
