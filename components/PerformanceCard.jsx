@@ -1,6 +1,7 @@
 "use client";
 import { IoIosInformationCircle } from "react-icons/io";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const PerformanceCard = ({ performanceMetrics, currentCoin }) => {
@@ -51,9 +52,16 @@ const PerformanceCard = ({ performanceMetrics, currentCoin }) => {
 
     return (
         <div className="mt-6 bg-background rounded-xl p-2 md:p-6">
-            <h1 className="text-2xl font-semibold">Performance</h1>
+            <h1 className="text-2xl font-semibold pb-4">Performance</h1>
+            <Image
+                     
+                    src="/performanceAnalysis.png"
+                    height={1200}
+                    width={1200}
+                    alt='notAvail'
+                    />
 
-            <h2 className='text-lg font-semibold text-muted-foreground flex justify-start gap-1 items-center'>Fundamentals <IoIosInformationCircle /></h2>
+            <h2 className='text-lg pt-6 font-semibold text-muted-foreground flex justify-start gap-1 items-center'>Fundamentals <IoIosInformationCircle /></h2>
             {performanceData && (
                 <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] gap-x-16 mt-6">
                     <div>
