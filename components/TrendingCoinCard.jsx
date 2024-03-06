@@ -26,7 +26,7 @@ const TrendingCoinCard = ({ trendingRequest }) => {
     
 
   return (
-    <Card className="w-full bg-white text-black text-center mt-6" >
+    <Card className="w-full bg-white text-black  mt-6" >
       <CardHeader>
         <h1 className="text-2xl font-bold">Trending Coins {"(24H)"}</h1>
         
