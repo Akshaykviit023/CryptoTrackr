@@ -30,12 +30,13 @@ const TeamCard = () => {
         <p className="my-6 text-[15px] font-medium text-[#3E424A]">Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu nibh. Eget mattis in mi integer sit egestas. Proin tempor id pretium quam. Facilisis purus convallis quam augue.</p>
 
         {teamDetails.map((team, index) => (
-            <div key={index} className='bg-blue-50 w-full py-4 px-6 md:flex md:gap-10 md:items-center my-6 rounded-lg'>
-                <div className='text-center'>
-                    <Image 
+            <div key={index} className='bg-blue-50 w-full py-4 px-6 flex gap-10 items-center max-md:flex-col max-md:justify-center my-6 rounded-lg '>
+                <div className='text-center w-[130px]'>
+                    <Image
+                     
                     src={team.profilePic}
-                    height={350}
-                    width={350}
+                    height={130}
+                    width={130}
                     alt='notAvail'
                     />
                     <h2 className='mt-2 text-[15px] font-semibold'>{team.profileName}</h2>

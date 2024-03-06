@@ -36,7 +36,7 @@ const FooterCharts = ({ trendingCoinsProps }) => {
         {trendingCoins && trendingCoins.map((coin, index) => (
           <CarouselItem key={index} className="pl-1 md:basis-1/2 xl:basis-1/4">
             <div className="p-1">
-              <Card className="py-4 ">
+              <Card className="py-4 h-[220px]">
                 <CardContent className="">
                     <div className="flex items-center gap-2 pb-2">
                 <Image 
@@ -52,7 +52,7 @@ const FooterCharts = ({ trendingCoinsProps }) => {
                         <p className={`text-xs font-medium  flex items-center gap-1 ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) > 0 ? "text-green-500" : "text-red-500"}`}><BiSolidUpArrow className={`text-xs ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) > 0 ? "" : "rotate-180" }`}/>{coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%</p>
                         </div>
                         </div>
-                        <p className="text-xl font-medium">{coin.item.data.price}</p>
+                        <p className="text-xl font-medium leading-[1.5em] h-[1.5em] overflow-hidden">{coin.item.data.price}</p>
                         <Image 
                         src={coin.item.data.sparkline}
                         unoptimized
@@ -66,8 +66,8 @@ const FooterCharts = ({ trendingCoinsProps }) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="max-md:hidden" />
-      <CarouselNext className="max-md:hidden"/>
+      <CarouselPrevious className="mt-6 max-md:hidden" />
+      <CarouselNext className="mt-6 max-md:hidden"/>
     </Carousel>
     </div>
 
@@ -80,7 +80,7 @@ const FooterCharts = ({ trendingCoinsProps }) => {
         {trendingCoins && trendingCoins.map((coin, index) => (
           <CarouselItem key={index} className="pl-1 md:basis-1/2 xl:basis-1/4">
             <div className="p-1">
-              <Card className="py-4 ">
+              <Card className="py-4 h-[220px]">
                 <CardContent className="">
                     <div className="flex items-center gap-2 pb-2">
                 <Image 
@@ -96,7 +96,7 @@ const FooterCharts = ({ trendingCoinsProps }) => {
                         <p className={`text-xs font-medium  flex items-center gap-1 ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) > 0 ? "text-green-500" : "text-red-500"}`}><BiSolidUpArrow className={`text-xs ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) > 0 ? "" : "rotate-180" }`}/>{coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%</p>
                         </div>
                         </div>
-                        <p className="text-xl font-medium">{coin.item.data.price}</p>
+                        <p className="text-xl font-medium leading-[1.5em] h-[1.5em] overflow-hidden">{coin.item.data.price}</p>
                         <Image 
                         src={coin.item.data.sparkline}
                         unoptimized
@@ -110,8 +110,8 @@ const FooterCharts = ({ trendingCoinsProps }) => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="max-md:hidden"/>
-      <CarouselNext className="max-md:hidden"/>
+      <CarouselPrevious className="mt-6 max-md:hidden"/>
+      <CarouselNext className="mt-6 max-md:hidden"/>
     </Carousel>
     </div>
     </div>
