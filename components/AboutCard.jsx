@@ -28,7 +28,7 @@ const AboutCard = ({ performanceMetrics }) => {
         <h1 className="text-2xl font-semibold">About Bitcoin</h1>
         <h2 className="text-lg font-semibold">What is Bitcoin?</h2>
         { performanceData &&
-        <p className="text-[15px] font-medium text-[#3E424A]">Bitcoin's price today is US{formatNumber(performanceData.market_data.current_price.usd, 'USD')}, with a 24-hour trading volume of {formatNumber(performanceData.market_data.total_volume.usd, 'USD')}. BTC is {performanceData.market_data.price_change_percentage_24h_in_currency.usd.toFixed(2)}% in the last 24 hours. It is currently -7.70% from its 7-day all-time high of $18,366.66, and 3.40% from its 7-day all-time low of $16,394.75. BTC has a circulating supply of 19.24 M BTC and a max supply of 21 M BTC.</p>
+        <p className="text-[15px] font-medium text-[#3E424A]">Bitcoin&apos;s price today is US{formatNumber(performanceData.market_data.current_price.usd, 'USD')}, with a 24-hour trading volume of {formatNumber(performanceData.market_data.total_volume.usd, 'USD')}. BTC is {performanceData.market_data.price_change_percentage_24h_in_currency.usd.toFixed(2)}% in the last 24 hours. It is currently -7.70% from its 7-day all-time high of $18,366.66, and 3.40% from its 7-day all-time low of $16,394.75. BTC has a circulating supply of 19.24 M BTC and a max supply of 21 M BTC.</p>
 }
         <Separator className="my-4"/>
         <h2 className="text-lg font-semibold">Lorem ipsum dolor sit amet</h2>
