@@ -1,5 +1,5 @@
 ## Getting Started
-<p>A responsive crypto trading information web application with next.js</p>
+<p>A responsive cryptocurrencies trading information web application with next.js</p>
 
 ## Tech Stacks
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -22,7 +22,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## First Look
-<p>The first look shows the chart of the coin cryptocurrency selected and <b>top 3 trending coins</b> in the past 24H.</p>
+<p>The first look shows the chart of the cryptocurrency selected and <b>top 3 trending coins</b> in the past 24H.</p>
 <img width="1259" alt="image" src="https://github.com/Akshaykviit023/koinx-assignment/assets/73570745/8b8a0290-4fa8-4870-88f6-0c07e9418e37">
 
 ## Dynamic Routing 
