@@ -1,5 +1,8 @@
 ## Getting Started
+<p>A responsive crypto trading information web application with next.js</p>
 
+## Tech Stacks
+	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 First, run the development server:
 
 ```bash
@@ -25,3 +28,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Dynamic Coin Information Changes
 <p>Information throughout the application changes with selection of cryptocurrency.</p>
 <img width="1257" alt="image" src="https://github.com/Akshaykviit023/koinx-assignment/assets/73570745/162484bd-00a4-4019-94f7-930dd94ef062">
+
