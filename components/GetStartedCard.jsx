@@ -17,8 +17,8 @@ export default function CardDemo() {
   return (
     <Card className="w-full bg-[#0052FE] text-white text-center " >
       <CardHeader>
-        <h1 className="text-2xl font-bold">Get Started with KoinX for FREE</h1>
-        <CardDescription className="text-white text-[14px]">With our range of features that you can equip for free, KoinX allows you to be more educated and aware of your tax reports.</CardDescription>
+        <h1 className="text-2xl font-bold">Get Started with CryptoTrackr for FREE</h1>
+        <CardDescription className="text-white text-[14px]">With our range of features that you can equip for free, CryptoTrackr allows you to be more educated and aware of your tax reports.</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className="mx-auto">
