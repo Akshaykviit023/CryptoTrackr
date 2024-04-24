@@ -14,12 +14,13 @@ const Nav = () => {
   return (
     <div className="w-full bg-white h-20 flex justify-center items-center fixed z-10
     shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
-        <div className="w-11/12 flex justify-between items-center mx-auto relative">
+        <div className="w-11/12 flex justify-between items-center mx-auto relative ">
         <Image 
-        src="/koinX_Logo.png"
-        alt="koinxLogo"
-        height={100}
-        width={100}
+        className="hover:cursor-pointer"
+        src="/cryptoTrackr_Logo.png"
+        alt="cryptoTrackrLogo"
+        height={250}
+        width={250}
 
         />
 
